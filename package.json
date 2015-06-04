@@ -1,0 +1,30 @@
+{
+  "name": "directories",
+  "version": "1.0.0",
+  "description": "Directory names within a path, returned in many formats",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jameswomack/node-directories.git"
+  },
+  "keywords": [
+    "directories",
+    "directory",
+    "dir",
+    "readdir",
+    "object",
+    "hierarchy",
+    "format",
+    "exclude",
+    "only"
+  ],
+  "author": "james@womack.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jameswomack/node-directories/issues"
+  },
+  "homepage": "https://github.com/jameswomack/node-directories#readme"
+}
