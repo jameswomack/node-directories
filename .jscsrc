@@ -1,0 +1,9 @@
+{
+  "preset": "node-style-guide",
+  "requireTrailingComma": null,
+  "disallowMultipleVarDecl": null,
+  "requireCapitalizedComments": {
+    "allExcept": ["args","jshint"]
+  },
+  "maximumLineLength": null
+}

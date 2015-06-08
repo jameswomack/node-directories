@@ -2,9 +2,23 @@
   "name": "directories",
   "version": "1.0.0",
   "description": "Directory names within a path, returned in many formats",
-  "main": "index.js",
+  "main": "lib/directories.js",
+  "config": {
+    "blanket": {
+      "data-cover-never": "node_modules",
+      "pattern": "lib/directories"
+    }
+  },
   "scripts": {
-    "test": "mocha"
+    "cover": "mocha -R html-cov --require blanket > test/coverage.html && open test/coverage.html",
+    "push": "git push origin master",
+    "lint": "jshint lib bin test --reporter node_modules/jshint-stylish/index.js --exclude node_modules && jscs lib bin test",
+    "depcheck": "npm-check",
+    "test": "mocha --inline-diffs",
+    "clean": "git clean -d -f -x"
+  },
+  "bin": {
+    "directories": "./bin/directories"
   },
   "repository": {
     "type": "git",
@@ -26,5 +40,18 @@
   "bugs": {
     "url": "https://github.com/jameswomack/node-directories/issues"
   },
-  "homepage": "https://github.com/jameswomack/node-directories#readme"
+  "homepage": "https://github.com/jameswomack/node-directories#readme",
+  "dependencies": {
+    "async": "1.2.0",
+    "is-function": "1.0.1",
+    "isobject": "1.0.0"
+  },
+  "devDependencies": {
+    "blanket": "1.1.7",
+    "jscs": "1.13.1",
+    "jshint": "2.8.0",
+    "jshint-stylish": "2.0.0",
+    "npm-check": "3.2.10",
+    "sinon": "1.14.1"
+  }
 }

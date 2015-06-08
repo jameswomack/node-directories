@@ -1,0 +1,38 @@
+{
+  /*
+   * ENVIRONMENTS
+   * =================
+   */
+  "node": true,
+  "mocha": true,
+
+  /*
+   * ENFORCING OPTIONS
+   * =================
+   */
+
+  // Prohibit use of == and != in favor of === and !==.
+  "eqeqeq": true,
+
+  // Prohibit use of a variable before it is defined.
+  "latedef": true,
+
+  // Require capitalized names for constructor functions.
+  "newcap": true,
+
+  // Prohibit use of explicitly undeclared variables.
+  "undef": true,
+
+  // Warn when variables are defined but never used.
+  "unused": true,
+
+  /*
+   * RELAXING OPTIONS
+   * =================
+   */
+
+  // Suppress warnings about == null comparisons.
+  "eqnull": true,
+  "asi": true,
+  "expr": true
+}
