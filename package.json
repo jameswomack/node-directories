@@ -1,7 +1,7 @@
 {
   "name": "directories",
-  "version": "1.0.0",
-  "description": "Directory names within a path, returned in many formats",
+  "version": "1.0.1",
+  "description": "Retrieve the directory names within a chosen directory",
   "main": "lib/directories.js",
   "config": {
     "blanket": {
